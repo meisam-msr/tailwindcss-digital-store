@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiTize | دیجی تایز</title>
+    <link rel="stylesheet" href="./build/tailwind.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- App bar -->
+    <div class="flex md:hidden items-center justify-between mt-10 px-4 mb-6">
+      <div>
+        <img class="" src="/assets/images/Logo.png" alt="digitize-logo" />
+      </div>
+      <div class="text-2xl font-bold text-slate-800">ساعت هوشمند</div>
+      <div
+        class="flex items-center justify-center bg-white w-8 h-8 rounded-md shadow-md"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z"
+            stroke="#222F5D"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18.3332 18.3332L16.6665 16.6665"
+            stroke="#222F5D"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- Filter and sort -->
+    <div class="flex md:hidden items-center justify-between px-4 gap-x-2 mb-9">
+      <div
+        class="bg-white flex items-center justify-start rounded-md w-1/2 py-2 px-4"
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 stroke-orange-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+            />
+          </svg>
+        </div>
+        <span class="text-sm font-medium mr-2 text-slate-800">محبوب ترین</span>
+      </div>
+      <div
+        class="bg-white flex items-center justify-start rounded-md w-1/2 py-2 px-4"
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 stroke-gray-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+            />
+          </svg>
+        </div>
+        <span class="text-sm font-medium mr-2 text-slate-800">فیلتر: اپل</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
+      <!-- Sidebar -->
+      <div class="bg-white hidden md:block p-4 col-span-4 lg:col-span-3 row-span-2">
+        sidebar
+      </div>
+      <!-- sort section -->
+      <div class="bg-white hidden md:block p-4 col-span-8 lg:col-span-9">sort section</div>
+      <!-- products -->
+      <div class="col-span-12 md:col-span-8 lg:col-span-9">
+        <div
+          x-data="{
+        products : [
+        {id:1, title: 'ساعت هوشمند اپل سری6', price: '۴۸,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch.png'},
+        {id:2, title: 'ساعت هوشمند اپل سری3', price: '۲,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch-black.png'},
+        {id:3, title: 'ساعت هوشمند اپل سری6', price: '۴۸,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch.png'},
+        {id:4, title: 'ساعت هوشمند اپل سری3', price: '۲,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch-black.png'},
+        {id:5, title: 'ساعت هوشمند اپل سری6', price: '۴۸,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch.png'},
+        {id:6, title: 'ساعت هوشمند اپل سری3', price: '۲,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch-black.png'},
+        {id:7, title: 'ساعت هوشمند اپل سری6', price: '۴۸,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch.png'},
+        {id:8, title: 'ساعت هوشمند اپل سری3', price: '۲,۲۵۰,۰۰۰ تومان', image: '/assets/images/watch-black.png'},
+        ]
+      }"
+          class="grid grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 px-4 md:px-0"
+        >
+          <template x-for="product in products" :key="product.id">
+            <div class="bg-white rounded-xl p-2 shadow-md">
+              <div
+                class="rounded-md mb-3 bg-gray-300 flex items-center justify-center"
+              >
+                <img class="p-4" x-bind:src="product.image" alt="watch" />
+              </div>
+              <!-- product description -->
+              <div class="flex justify-between items-center px-1 mb-3">
+                <span class="text-slate-400 text-sm md:text-base">اپل</span>
+                <div
+                  x-data="{ color : 'white' , activeClass: 'border-gray-400' }"
+                  class="flex items-center"
+                >
+                  <div
+                    @click="color = 'indigo' "
+                    :class="color === 'indigo' ? activeClass: '' "
+                    class="w-6 h-6 sm:w-8 sm:h-8 rounded-full cursor-pointer bg-indigo-400 border-2 border-white"
+                  ></div>
+                  <div
+                    @click="color = 'yellow' "
+                    :class="color === 'yellow' ? activeClass: '' "
+                    class="w-6 h-6 sm:w-8 sm:h-8 rounded-full cursor-pointer bg-yellow-400 border-2 border-white -mr-1.5"
+                  ></div>
+                  <div
+                    @click="color = 'white' "
+                    :class="color === 'white' ? activeClass: '' "
+                    class="w-6 h-6 sm:w-8 sm:h-8 rounded-full cursor-pointer bg-stone-100 border-2 border-white -mr-1.5"
+                  ></div>
+                </div>
+              </div>
+              <div
+                x-text="product.title"
+                class="text-slate-800 text-sm mb-3 md:text-base"
+              ></div>
+              <div
+                x-text="product.price"
+                class="text-orange-600 font-medium text-left mb-3"
+              ></div>
+              <hr />
+              <button class="text-orange-400 font-bold py-2 w-full md:text-lg">
+                مشاهده و سفارش
+              </button>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+    <!-- products -->
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </body>
+</html>
