@@ -28,7 +28,7 @@
 
 body,
 button {
-  font-family: "iranYekan";
+  font-family: iranYekan, poppins;
 }
 * {
   -webkit-user-select: none;
