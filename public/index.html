@@ -87,11 +87,13 @@
       </div>
     </div>
     <!-- desktop navbar -->
-    <nav
-      class="bg-white hidden md:block p-4 shadow-lg mb-8 sticky top-0 z-10"
-    >
-      <div class="container mx-auto max-w-screen-2xl flex items-center justify-between">
-        <ul class="flex items-center gap-x-0 lg:gap-x-4 text-slate-800 lg:text-lg">
+    <nav class="bg-white hidden md:block p-4 shadow-lg mb-8 sticky top-0 z-10">
+      <div
+        class="container mx-auto max-w-screen-2xl flex items-center justify-between"
+      >
+        <ul
+          class="flex items-center gap-x-0 lg:gap-x-4 text-slate-800 lg:text-lg"
+        >
           <li>
             <a
               class="block px-4 py-2 transition-all duration-300 rounded-md"
@@ -162,7 +164,11 @@
                 />
               </svg>
             </span>
-            <input class="w-full focus:outline-0 bg-transparent py-2" type="text" placeholder="جستجوی نام محصول، نام برند، نام مدل و...">
+            <input
+              class="w-full focus:outline-0 bg-transparent py-2"
+              type="text"
+              placeholder="جستجوی نام محصول، نام برند، نام مدل و..."
+            />
           </div>
         </div>
       </div>
@@ -173,8 +179,12 @@
       class="px-4 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8"
     >
       <!-- Sidebar -->
-      <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
-        <div class="bg-white rounded-xl p-5 max-h-[calc(100vh_-_140px)] overflow-auto sticky top-28 scrollbar-hide">
+      <div
+        class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2"
+      >
+        <div
+          class="bg-white rounded-xl p-5 max-h-[calc(100vh_-_140px)] overflow-auto sticky top-28 scrollbar-hide"
+        >
           <!-- categories -->
           <div class="mb-3">
             <div class="tetx-lg font-bold text-orange-400 mb-5">دسته بندی</div>
@@ -706,6 +716,83 @@
           </template>
         </div>
       </div>
+    </div>
+    <!-- bottom navigation  -->
+    <div
+      class="fixed bg-white bottom-0 right-0 left-0 w-full rounded-t-md px-4 flex items-center"
+    >
+      <nav class="w-full">
+        <ul class="flex items-center justify-between gap-x-2 w-full">
+          <li class="w-full bg-red-100">
+            <a class="flex items-center py-4" href="#">
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z"
+                    fill="#222F5D"
+                  />
+                </svg></span
+              ><span>خانه</span>
+            </a>
+          </li>
+          <li class="w-full bg-red-100">
+            <a class="flex items-center py-4" href="#">
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z"
+                    fill="#222F5D"
+                  />
+                </svg></span
+              ><span>خانه</span>
+            </a>
+          </li>
+          <li class="w-full bg-red-100">
+            <a class="flex items-center py-4" href="#">
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z"
+                    fill="#222F5D"
+                  />
+                </svg></span
+              ><span>خانه</span>
+            </a>
+          </li>
+          <li class="w-full bg-red-100">
+            <a class="flex items-center py-4" href="#">
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z"
+                    fill="#222F5D"
+                  />
+                </svg></span
+              ><span>خانه</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <script src="//unpkg.com/alpinejs" defer></script>

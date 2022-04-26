@@ -448,6 +448,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
   background-color: currentColor;
 }
+.fixed{
+  position: fixed;
+}
 .absolute{
   position: absolute;
 }
@@ -469,6 +472,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .-left-2{
   left: -0.5rem;
+}
+.bottom-0{
+  bottom: 0px;
+}
+.right-0{
+  right: 0px;
+}
+.left-0{
+  left: 0px;
 }
 .z-10{
   z-index: 10;
@@ -592,6 +604,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.flex-row{
+  flex-direction: row;
+}
 .flex-col{
   flex-direction: column;
 }
@@ -600,6 +615,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-start{
   justify-content: flex-start;
+}
+.justify-end{
+  justify-content: flex-end;
 }
 .justify-center{
   justify-content: center;
@@ -628,12 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overflow-auto{
   overflow: auto;
 }
-.overflow-scroll{
-  overflow: scroll;
-}
-.overflow-y-scroll{
-  overflow-y: scroll;
-}
 .rounded-md{
   border-radius: 0.375rem;
 }
@@ -648,6 +660,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded-full{
   border-radius: 9999px;
+}
+.rounded-t-md{
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 .border-2{
   border-width: 2px;
@@ -695,6 +711,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
 .stroke-orange-600{
   stroke: #ea580c;
 }
@@ -732,6 +752,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .text-left{
   text-align: left;
