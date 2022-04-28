@@ -765,6 +765,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
+.bg-blue-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
 .stroke-orange-600{
   stroke: #ea580c;
 }
@@ -1076,6 +1080,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
   .lg\:col-span-9{
     grid-column: span 9 / span 9;
+  }
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+  .lg\:col-span-10{
+    grid-column: span 10 / span 10;
   }
   .lg\:flex{
     display: flex;
