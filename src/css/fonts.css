@@ -12,23 +12,9 @@
   src: url("/assets/fonts/Vazir-Bold.woff") format("woff");
 }
 
-@font-face {
-  font-family: "iranYekan";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/assets/fonts/IRANYekanWeb.woff") format("woff");
-}
-
-@font-face {
-  font-family: "iranYekan";
-  font-weight: 700;
-  font-style: normal;
-  src: url("/assets/fonts/IRANYekanWeb\ Bold.woff") format("woff");
-}
-
 body,
 button {
-  font-family: iranYekan, poppins;
+  font-family: vazir, poppins;
 }
 * {
   -webkit-user-select: none;
