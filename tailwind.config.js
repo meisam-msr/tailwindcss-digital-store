@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        yekan: ["iranYekan"],
         vazir: ["vazir"],
       },
     },
@@ -11,6 +12,6 @@ module.exports = {
     require("@tailwindcss/forms")({
       strategy: "class",
     }),
-    require("tailwind-scrollbar-hide"),
+    require('tailwind-scrollbar-hide'),
   ],
 };
